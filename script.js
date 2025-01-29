@@ -42,17 +42,7 @@ bookCards.forEach(book => {
 });
 
 // وظيفة لتحميل الكتاب مع التعامل مع الأخطاء
-// وظيفة لتحميل الكتاب مع التعامل مع الأخطاء
 function startDownload(file) {
-    const validFile = file
-
-    if (validFile) {
-        // فتح الرابط في نافذة جديدة
-        window.open(file, '_blank');
-    } else {
-        // إظهار رسالة خطأ إذا كان الرابط مكسورًا
-        const errorMessage = document.getElementById('error-message');
-        errorMessage.style.display = 'block';
-    }
+    // فتح الرابط في نافذة جديدة
+    window.open(file, '_blank');
 }
-

@@ -42,8 +42,9 @@ bookCards.forEach(book => {
 });
 
 // وظيفة لتحميل الكتاب مع التعامل مع الأخطاء
+// وظيفة لتحميل الكتاب مع التعامل مع الأخطاء
 function startDownload(file) {
-    const validFile = file.startsWith("file://"); // تأكد من أن الرابط يبدأ بـ file://
+    const validFile = file && file.startsWith("http"); // التأكد من أن الرابط هو رابط URL صالح
 
     if (validFile) {
         // فتح الرابط في نافذة جديدة
@@ -54,3 +55,4 @@ function startDownload(file) {
         errorMessage.style.display = 'block';
     }
 }
+

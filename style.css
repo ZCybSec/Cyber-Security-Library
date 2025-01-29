@@ -1,0 +1,279 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: 'Open Sans', sans-serif;
+    background: linear-gradient(135deg, #212121 50%, #1a1a1a 50%);
+    color: white;
+    line-height: 1.6;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+/* Container to center align the header */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header Section */
+header {
+    background-color: #1a1a1a;
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+}
+
+/* Shining effect on text */
+.shining-text {
+    font-size: 3rem;
+    color: #00ff00;
+    text-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00, 0 0 30px #00ff00;
+    animation: shine 2s ease-in-out infinite alternate;
+}
+
+@keyframes shine {
+    0% {
+        text-shadow: 0 0 5px #00ff00, 0 0 10px #00ff00, 0 0 20px #00ff00;
+    }
+    100% {
+        text-shadow: 0 0 30px #00ff00, 0 0 50px #00ff00, 0 0 70px #00ff00;
+    }
+}
+
+/* Navigation */
+nav ul {
+    list-style: none;
+    text-align: center;
+    margin-top: 10px;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: all 0.3s ease, transform 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #00ff00;
+    color: black;
+    transform: scale(1.05);
+}
+
+/* Search Bar */
+.search-bar {
+    text-align: center;
+    margin: 20px 0;
+}
+
+#search {
+    padding: 10px;
+    width: 80%;
+    max-width: 400px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+#search:focus {
+    outline: none;
+    background-color: #444;
+}
+
+#category-filter {
+    padding: 10px;
+    font-size: 1rem;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+#category-filter:focus {
+    outline: none;
+    background-color: #444;
+}
+
+/* Book List Section */
+.book-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    justify-items: center;
+}
+
+/* Individual Book Card */
+.book {
+    background-color: #1a1a1a;
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+    box-shadow: 0 0 15px rgba(0, 255, 0, 0.2);
+    position: relative;
+    cursor: pointer;
+}
+
+/* Styling for Book Image Container */
+.book-img-container {
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+    position: relative;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+/* Book Image - Ensure the image is fully visible */
+.book-img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 10px;
+}
+
+/* Book Card hover effect */
+.book:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 20px rgba(0, 255, 0, 0.3);
+}
+
+/* Download icon positioned at the top-right corner */
+.download-icon {
+    position: absolute;
+    top: 10px;   /* Positioning the icon 10px from the top */
+    right: 10px; /* Positioning the icon 10px from the right */
+    font-size: 2rem; /* Icon size */
+    color: #00ff00;
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.3s ease;
+    cursor: pointer;
+}
+
+/* Show download icon on hover */
+.book:hover .download-icon {
+    opacity: 1; /* Show icon when hovered */
+}
+
+/* Styling for download animation (optional) */
+.download-bar {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background-color: #00ff00;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease;
+}
+
+/* Display the bar when hovered */
+.book:hover .download-bar {
+    transform: scaleX(1); /* Show download bar */
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #1a1a1a;
+    margin-top: 20px;
+}
+
+footer p {
+    color: white;
+}
+
+/* About and Contact Section */
+.about-section,
+.contact-section {
+    background-color: #1a1a1a;
+    border-radius: 10px;
+    padding: 30px;
+    margin-top: 40px;
+}
+
+.about-section h2, .contact-section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    nav ul li {
+        margin-right: 10px;
+    }
+
+    #search {
+        width: 90%;
+        max-width: 400px;
+    }
+
+    #category-filter {
+        width: 90%;
+        max-width: 400px;
+        margin-top: 10px;
+    }
+    
+    .book-list {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    }
+
+    .book h2 {
+        font-size: 1.2rem;
+    }
+
+    .book p {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .book {
+        padding: 15px;
+    }
+
+    .book h2 {
+        font-size: 1rem;
+    }
+
+    .about-section h2, .contact-section h2 {
+        font-size: 1.5rem;
+    }
+}

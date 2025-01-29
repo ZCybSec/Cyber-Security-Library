@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cyber Security Library</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <!-- Add Font Awesome link for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <h1 class="shining-text">Cyber Security Library</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="search-bar">
+        <div class="container">
+            <input type="text" id="search" placeholder="Search for a book...">
+            <select id="category-filter">
+                <option value="all">All Categories</option>
+                <option value="hacking">Hacking</option>
+                <option value="malware">Malware Analysis</option>
+                <option value="web-security">Web Security</option>
+            </select>
+        </div>
+    </section>
+
+    <section class="book-list">
+        <!-- First Book -->
+        <div class="book" data-category="hacking" data-file="pdfs/Lisa_Bock_-_Learn_Wireshark__A_definitive_guide_to_expertly_analyzing_protocols_and_troubleshooting_networks_using_Wireshark_2022_Packt_Publishing_-_libgen.li.pdf">
+            <div class="book-img-container">
+                <!-- Image for the first book -->
+                <img src="images/Lisa_Bock_-_Learn_Wireshark__A_definitive_guide_to_expertly_analyzing_protocols_and_troubleshooting_networks_using_Wireshark_2022_Packt_Publishing_-_libgen.li.png" alt="Learn Wireshark" class="book-img">
+            </div>
+            <h2>Learn Wireshark</h2> <!-- Shortened title -->
+            <!-- Font Awesome download icon -->
+            <i class="download-icon fas fa-cloud-download-alt"></i>
+            <div class="download-bar"></div>
+        </div>
+    
+        <!-- Second Book -->
+        <div class="book" data-category="malware" data-file="pdfs/black-hat-bash-scripting.pdf">
+            <div class="book-img-container">
+                <!-- Image for the second book -->
+                <img src="images/black-hat-bash-scripting.png" alt="Black Hat Bash Scripting" class="book-img">
+            </div>
+            <h2>Black Hat Bash</h2> <!-- Shortened title -->
+            <!-- Font Awesome download icon -->
+            <i class="download-icon fas fa-cloud-download-alt"></i>
+            <div class="download-bar"></div>
+        </div>
+    
+        <!-- More books can be added here -->
+    </section>
+    
+
+    <div id="error-message" class="error-message" style="display: none;">
+        <p>Sorry, the download link is broken. Please try again later.</p>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Cyber Security Library</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

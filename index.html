@@ -8,7 +8,6 @@
     <title>Cyber Security Library</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
-    <!-- Add Font Awesome link for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 
@@ -33,45 +32,113 @@
             <select id="category-filter">
                 <option value="all">All Categories</option>
                 <option value="hacking">Hacking</option>
-                <option value="malware">Malware Analysis</option>
                 <option value="web-security">Web Security</option>
+                <option value="malware">Malware Analysis</option>
+                <option value="networking">Networking</option>
+                <option value="social-engineering">Social Engineering</option>
+                <option value="red-team">Red Team</option>
+                <option value="blue-team">Blue Team</option>
             </select>
         </div>
     </section>
 
     <section class="book-list">
-        <!-- First Book -->
-        <div class="book" data-category="hacking" data-file="pdfs
-/Lisa_Bock_-_Learn_Wireshark__A_definitive_guide_to_expertly_analyzing_protocols_and_troubleshooting_networks_using_Wireshark_2022_Packt_Publishing_-_libgen.li.pdf">
+        <!-- HACKING CATEGORY -->
+        <div class="book" data-category="hacking" data-file="pdfs/Black Hat Python, 1nd.pdf">
             <div class="book-img-container">
-                <!-- Image for the first book -->
-                <img src="images/Lisa_Bock_-_Learn_Wireshark__A_definitive_guide_to_expertly_analyzing_protocols_and_troubleshooting_networks_using_Wireshark_2022_Packt_Publishing_-_libgen.li.png" alt="Learn Wireshark" class="book-img">
+                <img src="images/Black Hat Python, 1nd.png" alt="Black Hat Python 1st Edition" class="book-img">
             </div>
-            <h2>Learn Wireshark</h2> <!-- Shortened title -->
-            <!-- Font Awesome download icon -->
+            <h2>Black Hat Python 1st</h2>
             <i class="download-icon fas fa-cloud-download-alt"></i>
-            <div class="download-bar"></div>
         </div>
-    
-        <!-- Second Book -->
-        <div class="book" data-category="malware" data-file="pdfs/black-hat-bash-scripting.pdf">
+
+        <div class="book" data-category="hacking" data-file="pdfs/Black Hat Python, 2nd.pdf">
             <div class="book-img-container">
-                <!-- Image for the second book -->
+                <img src="images/Black Hat Python, 2nd .png" alt="Black Hat Python 2nd Edition" class="book-img">
+            </div>
+            <h2>Black Hat Python 2nd</h2>
+            <i class="download-icon fas fa-cloud-download-alt"></i>
+        </div>
+
+        <div class="book" data-category="hacking" data-file="pdfs/black-hat-bash-scripting.pdf">
+            <div class="book-img-container">
                 <img src="images/black-hat-bash-scripting.png" alt="Black Hat Bash Scripting" class="book-img">
             </div>
-            <h2>Black Hat Bash</h2> <!-- Shortened title -->
-            <!-- Font Awesome download icon -->
+            <h2>Black Hat Bash</h2>
             <i class="download-icon fas fa-cloud-download-alt"></i>
-            <div class="download-bar"></div>
         </div>
-    
-        <!-- More books can be added here -->
-    </section>
-    
 
-    <div id="error-message" class="error-message" style="display: none;">
-        <p>Sorry, the download link is broken. Please try again later.</p>
-    </div>
+        <!-- WEB SECURITY CATEGORY -->
+        <div class="book" data-category="web-security" data-file="pdfs/Dafydd Stuttard, Marcus Pinto - The web application hacker's handbook_ finding and exploiting security flaws-Wiley (2011).pdf">
+            <div class="book-img-container">
+                <img src="images/Dafydd Stuttard, Marcus Pinto - The web application hacker's handbook_ finding and exploiting security flaws-Wiley (2011).png" alt="Web Application Hacker's Handbook" class="book-img">
+            </div>
+            <h2>Web App Hacker's Handbook</h2>
+            <i class="download-icon fas fa-cloud-download-alt"></i>
+        </div>
+
+        <!-- MALWARE ANALYSIS CATEGORY -->
+        <div class="book" data-category="malware" data-file="pdfs/Real-World-Bug-Hunting.pdf">
+            <div class="book-img-container">
+                <img src="images/Real-World-Bug-Hunting.png" alt="Real World Bug Hunting" class="book-img">
+            </div>
+            <h2>Real World Bug Hunting</h2>
+            <i class="download-icon fas fa-cloud-download-alt"></i>
+        </div>
+
+        <!-- NETWORKING CATEGORY -->
+        <div class="book" data-category="networking" data-file="pdfs/Learn Wireshark.pdf">
+            <div class="book-img-container">
+                <img src="images/Learn Wireshark.png" alt="Learn Wireshark" class="book-img">
+            </div>
+            <h2>Learn Wireshark</h2>
+            <i class="download-icon fas fa-cloud-download-alt"></i>
+        </div>
+
+        <div class="book" data-category="networking" data-file="pdfs/Packt Publishing - Network Scanning.pdf">
+            <div class="book-img-container">
+                <img src="images/Packt Publishing - Network Scanning.png" alt="Network Scanning" class="book-img">
+            </div>
+            <h2>Network Scanning</h2>
+            <i class="download-icon fas fa-cloud-download-alt"></i>
+        </div>
+
+        <!-- SOCIAL ENGINEERING CATEGORY -->
+        <div class="book" data-category="social-engineering" data-file="pdfs/Social Engineering_ The Science of Human Hacking .pdf">
+            <div class="book-img-container">
+                <img src="images/Social Engineering_ The Science of Human Hacking .png" alt="Social Engineering: The Science of Human Hacking" class="book-img">
+            </div>
+            <h2>Social Engineering</h2>
+            <i class="download-icon fas fa-cloud-download-alt"></i>
+        </div>
+
+        <!-- RED TEAM CATEGORY -->
+        <div class="book" data-category="red-team" data-file="pdfs/Red Team - How to Succeed by Thinking Like the Enemy by Micah Zenko.pdf">
+            <div class="book-img-container">
+                <img src="images/Red Team - How to Succeed by Thinking Like the Enemy by Micah Zenko.png" alt="Red Team" class="book-img">
+            </div>
+            <h2>Red Team</h2>
+            <i class="download-icon fas fa-cloud-download-alt"></i>
+        </div>
+
+        <!-- BLUE TEAM CATEGORY -->
+        <div class="book" data-category="blue-team" data-file="pdfs/Defensive-Security-Handbook.pdf">
+            <div class="book-img-container">
+                <img src="images/Defensive-Security-Handbook.png" alt="Defensive Security Handbook" class="book-img">
+            </div>
+            <h2>Defensive Security</h2>
+            <i class="download-icon fas fa-cloud-download-alt"></i>
+        </div>
+
+        <div class="book" data-category="blue-team" data-file="pdfs/The Practice of Network Security Monitoring.pdf">
+            <div class="book-img-container">
+                <img src="images/The Practice of Network Security Monitoring.png" alt="The Practice of Network Security Monitoring" class="book-img">
+            </div>
+            <h2>Network Security Monitoring</h2>
+            <i class="download-icon fas fa-cloud-download-alt"></i>
+        </div>
+
+    </section>
 
     <footer>
         <p>&copy; 2025 Cyber Security Library</p>
